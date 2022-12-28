@@ -1,0 +1,124 @@
+html{
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    align-items: center;
+    background: linear-gradient(160deg, #F2E3D5, #3CA6A6, #026773);
+    /*makes the background's color a gradient with specified angle and colors in hex code*/
+    display: flex;
+    font-family: 'Dosis', sans-serif;
+    /*sets font*/
+    font-display: swap;
+    height: inherit;
+    /*keeps uniformity*/
+    justify-content: center;
+    /*makes content centered*/
+}
+
+.wrapper{
+    /*calls class to edit it*/
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border-radius: 16px;
+    /*rounds the edges*/
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    /*creates a shadow around box*/
+    color: #232323;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.30);/*0.30 sets opacity, rest is rgb code*/
+    border: 1px solid rgba(255, 255, 255, 0.34);
+    flex-basis: 400px;
+    height: 540px;
+    padding: 20px 35px;
+    /*padding-> space between content and light box encapsulating it in the background*/
+}
+
+.screen{
+    /*just edits the zero since that's the only thing in this class*/
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 249, 243, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #232323;
+    font-size: 35px;
+    overflow: auto;
+    padding: 20px;
+    text-align: right;
+    width: 326px;
+}
+
+.calc-button-row{
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0;
+}
+
+.calc-button{
+    /*edits main buttons*/
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 249, 243);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #232323;
+    flex-basis: 20%;
+    font-family: inherit;
+    font-size: 24px;
+    height: 65px;
+}
+
+.calc-button:last-child{
+    /*last instance? edits right-most buttons*/
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px rgba(35, 35, 35, 0.25);
+    color: #232323;
+    background: #f8e5d2
+}
+
+.calc-button:last-child:hover{
+    /*what it looks like when mouse hovers over button*/
+    background-color: #f3d0b0;
+    color: inherit;
+}
+.calc-button:last-child:active{
+    /*what it looks like when button is clicked*/
+    background-color: #eba564;
+    color: white;
+}
+
+.calc-button:hover{
+    background-color: #c9d4d4;
+}
+
+.calc-button:active{
+    background-color: #0b6275;
+    color: white;
+}
+
+.double{
+    /*C button at the top stretched*/
+    flex-basis: 47%;
+}
+
+.triple{
+    /*0 button at the bottom stretched*/
+    flex-basis: 73%;
+}
